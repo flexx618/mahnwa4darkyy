@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* GLOBAL ENVIRONMENT - PERSISTENT DARK NOIR STYLE */
+        body { 
+            background-color: #050505; 
+            background: radial-gradient(circle at center, #1a0505 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #e0e0e0; 
+            font-family: 'Garamond', serif; 
+            line-height: 1.8; 
+            margin: 0;
+            padding: 40px 20px; 
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #8b0000; border-radius: 10px; }
+
+        .manhwa-container { 
+            position: relative;
+            max-width: 900px; 
+            width: 100%; 
+            border: 1px solid #1a1a1a; 
+            padding: 60px; 
+            background: #080808; 
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.2); 
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .chapter-header { 
+            text-align: center; 
+            border-bottom: 2px solid #8b0000; 
+            margin-bottom: 50px; 
+            padding-bottom: 20px; 
+        }
+        .title { 
+            font-size: 3em; 
+            color: #fff; 
+            margin: 0; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            font-weight: 900; 
+            text-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+        }
+        .scene-header { 
+            color: #d4af37; 
+            letter-spacing: 4px; 
+            font-weight: bold; 
+            margin-top: 50px; 
+            border-bottom: 1px solid #333; 
+            text-transform: uppercase; 
+            font-size: 1.2em; 
+        }
+
+        .narration { 
+            margin-bottom: 30px; 
+            text-align: justify; 
+            font-size: 1.15em; 
+            text-indent: 20px; 
+        }
+        .dialogue-wrap { 
+            background: #0c0c0c; 
+            padding: 30px; 
+            border-left: 5px solid #8b0000; 
+            margin: 30px 0; 
+            box-shadow: inset 5px 0 15px rgba(0,0,0,0.5); 
+        }
+        .character-name {
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .sfx { 
+            color: #8b0000; 
+            font-weight: bold; 
+            text-align: center; 
+            display: block; 
+            margin: 35px; 
+            letter-spacing: 6px; 
+            font-size: 1.6em; 
+            text-transform: uppercase; 
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
+        }
+        .warning-box { 
+            background: #1a0000; 
+            border: 2px solid #ff0000; 
+            padding: 40px; 
+            text-align: center; 
+            margin: 40px 0; 
+            box-shadow: 0 0 20px #ff0000;
+        }
+
+        .nav-box { display: flex; justify-content: flex-end; margin-top: 60px; }
+        .nav-btn { 
+            background: #8b0000; 
+            color: white; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 2px; 
+            transition: 0.4s; 
+            letter-spacing: 2px; 
+            border: 1px solid transparent;
+        }
+        .nav-btn:hover { 
+            background: #fff; 
+            color: #8b0000; 
+            box-shadow: 0 0 25px #8b0000; 
+            border: 1px solid #8b0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="manhwa-container">
+    <header class="chapter-header">
+        <h1 class="title">秘密の王座</h1>
+        <div class="scene-header">CHAPTER 26: THE TRUE HEIRESS</div>
+    </header>
+
+    <div class="scene-header" style="border: none; font-size: 0.9em; color: #8b0000;">
+        KIM MANSION // THE DINING HALL // THE BREACH
+    </div>
+
+    <div class="narration">
+        The silence in the room was heavy. Director Park’s pen had just finished the last stroke. The Board was finished. Seo-Jun stood over the documents—the new master of the Kim Empire. 
+    </div>
+
+    <span class="sfx">** CLACK — HUMMMM — DARKNESS **</span>
+
+    <div class="narration">
+        Suddenly, the mansion’s main power grid died. The 4K monitors turned into black voids. For five seconds, the only sound was the panicked breathing of the Board members. Then, the emergency lights flickered on—not white, but a violent, pulsing <strong>RED</strong>.
+    </div>
+
+    <span class="sfx">** THUD — THUD — THUD **</span>
+
+    <div class="narration">
+        Heavy tactical boots echoed against the marble. A woman stepped into the blood-red glow. She wasn't wearing a dress or jewels; she was in black tactical gear, her hair tied back, her eyes sharper than a sniper's scope.
+    </div>
+
+    <span class="sfx">** THWACK! **</span>
+
+    <div class="narration">
+        With a blur of movement, she threw a black-oxide combat knife. It hummed through the air and slammed into the center of the dining table, pinning Shefiee’s signed contract deep into the mahogany.
+    </div>
+
+    <div class="dialogue-wrap" style="border-left-color: #ff0000;">
+        <span class="character-name">Hana Kim</span>
+        "Nice signature, Shefiee. Too bad it's worth nothing more than the paper it's printed on. Did you really think a few digital threats could hand over my birthright?"
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">President Kim</span>
+        (Voice cracked with shock) "Hana? You... you were supposed to be in the Special Operations Command in the North. How did you get past the perimeter?"
+    </div>
+
+    <div class="dialogue-wrap" style="border-left-color: #ff0000;">
+        <span class="character-name">Hana Kim</span>
+        "The perimeter is mine, Dad. The security, the servers, the 'Monitor Room'... they all answer to the primary biometric. You forgot to tell this 'Blood Heir' that the real locks on this house only open for <strong>my</strong> thumbprint."
+    </div>
+
+    <div class="warning-box">
+        <span class="character-name" style="color: #ff0000;">SYSTEM LOCKDOWN: BIOMETRIC OVERRIDE</span>
+        <p style="color: #fff; font-style: italic; margin-top: 15px;">
+            The red light reflects off the steel of her knife. Hana Kim is the biological daughter the President kept as his secret 'Weapon.' Unlike the Board, she has no scandals. Unlike the 'Amenities,' she has no fear.
+        </p>
+    </div>
+
+    <div class="narration">
+        Hana walked up to Seo-Jun. She was inches from his face, the smell of gunpowder and expensive rain clinging to her. She looked at him with the same cold, predatory gaze he used on the Board.
+    </div>
+
+    <div class="dialogue-wrap" style="border-left-color: #ff0000;">
+        <span class="character-name">Hana Kim</span>
+        "So, you're the one playing wolf in my house? You've audited the Board, and you've audited the girls... but let's see how you handle a woman who was trained to hunt wolves for a living."
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "The signatures are legally binding, Hana. My blood gives me the right."
+    </div>
+
+    
+
+    <div class="nav-box"> 
+        <a href="chapter27.html" class="nav-btn">CHAPTER 27: THE TRIAL OF STEEL →</a> 
+    </div>
+</div>
+
+</body>
+</html>
