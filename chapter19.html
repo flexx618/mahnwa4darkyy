@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 1. GLOBAL ENVIRONMENT & MOBILE RESPONSIVENESS */
+        body { 
+            background-color: #050505; 
+            background: radial-gradient(circle at center, #1a0505 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #e0e0e0; 
+            font-family: 'Garamond', serif; 
+            line-height: 1.8; 
+            margin: 0;
+            padding: 40px 20px; 
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        /* 2. CUSTOM BLOOD-RED SCROLLBAR */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #8b0000; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff0000; box-shadow: 0 0 10px #8b0000; }
+
+        /* 3. THE MANHWA CONTAINER */
+        .manhwa-container { 
+            position: relative;
+            max-width: 900px; 
+            width: 100%; 
+            border: 1px solid #1a1a1a; 
+            padding: 60px; 
+            background: #080808; 
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.2); 
+            transition: border 0.5s ease, box-shadow 0.5s ease;
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .manhwa-container:hover {
+            border-color: #8b0000;
+            box-shadow: 0 0 65px rgba(139, 0, 0, 0.3);
+        }
+
+        /* 4. CINEMATIC VIGNETTE OVERLAY */
+        .manhwa-container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, transparent 75%, rgba(0,0,0,0.95) 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* 5. HEADERS & TYPOGRAPHY */
+        .chapter-header { 
+            text-align: center; 
+            border-bottom: 2px solid #8b0000; 
+            margin-bottom: 50px; 
+            padding-bottom: 20px; 
+            position: relative; 
+            z-index: 3; 
+        }
+        .title { 
+            font-size: 3em; 
+            color: #fff; 
+            margin: 0; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            font-weight: 900; 
+            text-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+        }
+        .scene-header { 
+            color: #d4af37; 
+            letter-spacing: 4px; 
+            font-weight: bold; 
+            margin-top: 50px; 
+            border-bottom: 1px solid #333; 
+            text-transform: uppercase; 
+            font-size: 1.2em; 
+            position: relative; 
+            z-index: 3;
+        }
+
+        /* 6. CONTENT ELEMENTS */
+        .narration { 
+            margin-bottom: 30px; 
+            text-align: justify; 
+            font-size: 1.15em; 
+            text-indent: 20px; 
+            position: relative; 
+            z-index: 3; 
+        }
+        .camera-tag { 
+            color: #555; 
+            font-style: italic; 
+            font-size: 0.9em; 
+            margin: 25px 0 10px 0; 
+            display: block; 
+            border-left: 3px solid #8b0000; 
+            padding-left: 15px; 
+            text-transform: lowercase; 
+            position: relative; 
+            z-index: 3;
+        }
+        .dialogue-wrap { 
+            background: #0c0c0c; 
+            padding: 30px; 
+            border-left: 5px solid #8b0000; 
+            margin: 30px 0; 
+            position: relative; 
+            z-index: 3; 
+            box-shadow: inset 5px 0 15px rgba(0,0,0,0.5); 
+        }
+        .character-name {
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .sfx { 
+            color: #8b0000; 
+            font-weight: bold; 
+            text-align: center; 
+            display: block; 
+            margin: 35px; 
+            letter-spacing: 6px; 
+            font-size: 1.6em; 
+            text-transform: uppercase; 
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
+            position: relative; 
+            z-index: 3;
+        }
+        .warning-box { 
+            background: #0a0000; 
+            border: 2px double #8b0000; 
+            padding: 40px; 
+            text-align: center; 
+            margin: 40px 0; 
+            position: relative; 
+            z-index: 3; 
+        }
+
+        /* 7. NAVIGATION & FOOTER */
+        .nav-box { 
+            display: flex; 
+            justify-content: flex-end; 
+            margin-top: 60px; 
+            position: relative; 
+            z-index: 4; 
+        }
+        .nav-btn { 
+            background: #8b0000; 
+            color: white; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 2px; 
+            transition: 0.4s; 
+            letter-spacing: 2px; 
+            border: 1px solid transparent;
+            text-align: center;
+        }
+        .nav-btn:hover { 
+            background: #fff; 
+            color: #8b0000; 
+            box-shadow: 0 0 25px #8b0000; 
+            border: 1px solid #8b0000;
+        }
+
+        /* 8. MOBILE OVERRIDE */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .manhwa-container { 
+                padding: 30px 15px; 
+                border: none; 
+                box-shadow: none; 
+            }
+            .title { font-size: 1.8em; letter-spacing: 2px; }
+            .narration { text-indent: 10px; font-size: 1.05em; }
+        }
+
+        .sigma-watermark {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 0.7em;
+            color: #333;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            border-right: 1px solid #8b0000;
+            padding-right: 10px;
+            opacity: 0.4;
+            z-index: 0;
+        }
+        ::selection { background: #8b0000; color: #fff; }
+    </style>
+</head>
+<body>
+
+<div class="sigma-watermark">THE ADOPTED RULE</div>
+
+<div class="manhwa-container">
+    <header class="chapter-header">
+        <h1 class="title">秘密の王座</h1>
+        <div class="scene-header">CHAPTER 19: THE ADOPTED RULE</div>
+    </header>
+
+    <div class="scene-header" style="border: none; font-size: 0.9em; color: #8b0000;">
+        KIM MANSION // THE KITCHEN // THE COLLAPSE
+    </div>
+
+    <span class="camera-tag">extreme close-up on president kim’s leather gloves as they tighten. he watches the "protein" drip from lisa’s chin onto the marble floor.</span>
+
+    <div class="narration">
+        The silence in the kitchen was heavier than the smell of sex and sweat. Lisa remained on her knees, her nightgown torn, her eyes wide with a mixture of terror and lingering pleasure. She looked at her husband, expecting a bullet, but President Kim didn't even reach for his holster. Instead, he reached into his breast pocket.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">President Kim</span>
+        "You think I'm a fool, Seo-Jun? You think I didn't know you were 'auditing' my wife every time I left this house? You think I left her alone with a young wolf by accident?"
+    </div>
+
+    <div class="narration">
+        He tossed a yellowed, heavy envelope onto the counter. It slid through the mess of breakfast plates, stopping right in front of my hands. I picked it up. My fingers trembled.
+    </div>
+
+    <span class="sfx">** RIP - TEAR **</span>
+
+    <div class="warning-box">
+        <h3 style="color: #d4af37; letter-spacing: 5px; text-transform: uppercase; margin-top: 0;">GENETIC PROTOCOL: VERIFIED</h3>
+        <p style="font-style: italic; color: #e0e0e0; font-size: 1.1rem; margin-bottom: 0;">
+            Seo-Jun was never the son of a business partner. The "accident" 13 years ago was a masterpiece of fiction. President Kim had sired an illegitimate son with a woman he truly loved—and when she died, he brought his <strong>real blood</strong> into this house under the shield of 'adoption' to protect the Kim lineage from the Board.
+        </p>
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">President Kim</span>
+        "You are my <strong>only biological heir</strong>. I raised you in the shadows so you wouldn't grow up soft like these city brats. I needed a predator. And today, looking at my wife on her knees before you... I see I succeeded."
+    </div>
+
+    <div class="narration">
+        Lisa let out a strangled sob. She looked at me—the boy she had tried to dominate, the boy she had just served with her body—and realized she had been "training" her husband's actual successor. 
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "Then May... and Unisan... they are my sisters?"
+        <br><br>
+        <span class="character-name">President Kim</span>
+        (Laughing coldly) "Lisa was a divorcee with two brats when I married her. I needed a 'family' to look stable for the Board. They don't have a drop of my blood. They aren't your sisters, Seo-Jun. They are <strong>amenities</strong> provided by this mansion."
+    </div>
+
+    <span class="camera-tag">cut to the doorway. may is standing there, clutching her robe, her face ghostly white. she has heard everything.</span>
+
+    <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+        <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+            <tr>
+                <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="nav-box">
+        <a href="chapter20.html" class="nav-btn">NEXT CHAPTER →</a>
+    </div>
+</div>
+
+</body>
+</html>
