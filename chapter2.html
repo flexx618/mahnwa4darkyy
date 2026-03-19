@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+        body { 
+            background-color: #020105; 
+            color: #ffffff; 
+            font-family: 'Spectral', serif; 
+            line-height: 1.8; 
+            padding: 40px; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            border: 1px solid #1a0f2e; 
+            padding: 50px; 
+            background: linear-gradient(180deg, #080412 0%, #000 100%);
+            box-shadow: 0 0 100px rgba(48, 25, 82, 0.2); 
+        }
+
+        h1 { 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 12px; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #8b6b1b; 
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 { 
+            color: #c5a059; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            letter-spacing: 6px; 
+            margin-top: 0; 
+            font-family: 'Cinzel', serif;
+        }
+
+        .chapter-number { 
+            color: #5d3fd3; 
+            text-align: center; 
+            font-weight: bold; 
+            margin: 60px 0; 
+            font-size: 1.6rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px;
+            font-family: 'Cinzel', serif;
+            text-shadow: 0 0 15px rgba(93, 63, 211, 0.4);
+        }
+
+        .location-tag { 
+            color: #c5a059; 
+            font-weight: bold; 
+            border: 1px solid #8b6b1b;
+            padding: 5px 15px;
+            margin-bottom: 25px; 
+            display: inline-block; 
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(139, 107, 27, 0.3); 
+            background: rgba(139, 107, 27, 0.05);
+        }
+
+        .camera-direction { 
+            color: #5c5470; 
+            font-style: italic; 
+            font-size: 0.85rem; 
+            margin: 20px 0; 
+            display: block; 
+            font-family: 'Spectral', serif;
+        }
+
+        .sfx-small { 
+            text-align: center; 
+            margin: 35px 0; 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.1rem;
+            color: #5d3fd3; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #5d3fd3;
+            animation: slowPulse 4s infinite ease-in-out; 
+            display: block;
+        }
+
+        @keyframes slowPulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 25px #5d3fd3; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        .dialogue-container { 
+            margin: 35px 0; 
+            padding: 15px 25px; 
+            border-left: 1px solid #8b6b1b; 
+            background: linear-gradient(90deg, rgba(93,63,211,0.1) 0%, transparent 100%);
+        }
+
+        .character-name { 
+            color: #c5a059; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .action-desc { margin-bottom: 25px; font-size: 1.1rem; color: #ffffff; }
+        strong { color: #ffffff; font-weight: 800; }
+
+        .origin-block {
+            background: rgba(48, 25, 82, 0.3);
+            border: 1px solid #5d3fd3;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: inset 0 0 20px rgba(93, 63, 211, 0.2);
+        }
+
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 100px; 
+            padding-top: 40px; 
+        }
+
+        .next-link { 
+            color: #fff; 
+            background: #000; 
+            padding: 18px 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem; 
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(93, 63, 211, 0.6), 0 0 30px rgba(139, 107, 27, 0.2);
+            transition: 0.8s ease; 
+            display: inline-block;
+            border: 1px solid #8b6b1b;
+            letter-spacing: 3px;
+            animation: buttonGlow 3s infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            from { box-shadow: 0 0 15px rgba(93, 63, 211, 0.4); border-color: #8b6b1b; }
+            to { box-shadow: 0 0 30px rgba(93, 63, 211, 0.8), 0 0 10px #c5a059; border-color: #c5a059; }
+        }
+
+        .next-link:hover { 
+            background: #150b24; 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>秘密の王座 <br> <span style="font-size: 1.2rem; letter-spacing: 5px;">THE ADOPTED RULE</span></h1> 
+    <h2>CHAPTER 2</h2>
+<br>
+    <span class="location-tag">PARK NEAR SUBURBS // AFTERNOON</span>
+
+    <span class="camera-direction">[Camera: Mid-shot. Seo-Jun walking with Gobo, a chubby but friendly boy. Gobo is looking around suspiciously.]</span>
+
+    <div class="action-desc">
+        Seo-Jun tried to keep his mind off the morning's vision, but Gobo had other plans. His best friend reached into his bag, eyes gleaming with a type of mischief Seo-Jun wasn't ready for.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Gobo:</span> "Do you even know what a woman’s panties look like? No? Well, look at these—I snagged 'em from my sister's laundry. You can keep 'em."
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "No, I don't want to! Sex is only for having babies, Gobo. Doing it for fun is for bad guys."
+    </div>
+
+    <div class="action-desc">
+        Gobo laughed, but Seo-Jun was serious. He was shy, his face turning a deep crimson as he reluctantly tucked the stolen fabric into his pocket. He didn't want them, but his body felt a strange, involuntary pull he couldn't explain.
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #1a0f2e; margin: 40px 0;">
+
+    <span class="location-tag">KIM HOUSE // 2:00 AM</span>
+
+    <span class="camera-direction">[Camera: POV shot. The hallway is dark. Seo-Jun is creeping toward the kitchen for water, but stops outside the Master Suite.]</span>
+
+    <div class="action-desc">
+        Rhythmic noises echoed through the heavy wood door. Seo-Jun leaned in, heart hammering. Through a crack, he saw his step-parents. They were fully naked. The President was behind Lisa, hitting her with a raw, primal force.
+    </div>
+
+    <span class="sfx-small">** SLAP - SMACK **</span>
+
+    <div class="action-desc">
+        Lisa wasn't the composed mother figure he knew. She was moaning loudly, her <strong>big, soft breasts</strong> wobbling and floating with every strike. She was acting like a puppy for his father. 
+    </div>
+
+    <span class="camera-direction">[Camera: Close-up on Seo-Jun's wide, shocked eyes as he bolts for his room.]</span>
+
+    <div class="origin-block">
+        <h3 style="color: #c5a059; font-family: 'Cinzel', serif; letter-spacing: 3px;">THE FIRST TRANSGRESSION</h3>
+        <p style="font-style: italic; color: #e0d0ff;">
+            In the safety of his room, Seo-Jun couldn't resist. He pulled out the stolen panties, his mind flooded with the image of Lisa’s perfect, wobbling body. He didn't even know how to masturbate properly, but his body took over. 
+        <br><br>
+        He came quickly, the heat staining his underwear. Panicked and overwhelmed by shyness, he buried the evidence at the very bottom of the laundry basket, hiding it beneath a pile of clothes.
+        </p>
+    </div>
+    <span class="location-tag">KIM HOUSEHOLD // LAUNDRY ROOM // 8:30 AM</span>
+
+    <span class="camera-direction">[Camera: Close-up. Lisa is sorting through the morning laundry. The sunlight through the window illuminates the steam from the washing machine.]</span>
+
+    <div class="action-desc">
+        The morning after was quiet. Seo-Jun was still sleeping. Lisa hummed a soft tune as she reached the bottom of the basket. She pulled out a pair of men's underwear—Seo-Jun's.
+    </div>
+
+    <span class="camera-direction">[Camera: Zoom in on Lisa’s face. She pauses, observing the stiff, white stains on the fabric.]</span>
+
+    <div class="action-desc">
+        She didn't look disgusted. Instead, a playful, knowing smile spread across her lips. She let out a soft, melodic laugh that echoed in the small room. 
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Lisa:</span> (Whispering to herself) "Oh, Seo-Jun... you're already 20, yet you still don't even know how to do this correctly? Look at this mess."
+    </div>
+
+    <div class="action-desc">
+        Her laughter faded into a look of slight worry. To her, it was clear that her "innocent" stepson had finally reached a breaking point, but his lack of experience was almost pitiful. He was a man grown, with the body of an athlete, yet he was as lost as a child when it came to his own urges.
+    </div>
+
+    <span class="camera-direction">[Camera: Lisa sets the underwear aside. She looks toward the stairs, her eyes flashing with a maternal, yet dangerously curious intent.]</span>
+
+
+
+    <div class="footer-nav">
+        <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+            <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+                <tr>
+                    <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <a href="#" class="next-link">CHAPTER 3 →</a>
+    </div>
+</div>
+
+</body>
+</html>
