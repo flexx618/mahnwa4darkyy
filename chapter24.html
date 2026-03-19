@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* GLOBAL ENVIRONMENT - PERSISTENT STYLE */
+        body { 
+            background-color: #050505; 
+            background: radial-gradient(circle at center, #1a0505 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #e0e0e0; 
+            font-family: 'Garamond', serif; 
+            line-height: 1.8; 
+            margin: 0;
+            padding: 40px 20px; 
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #8b0000; border-radius: 10px; }
+
+        .manhwa-container { 
+            position: relative;
+            max-width: 900px; 
+            width: 100%; 
+            border: 1px solid #1a1a1a; 
+            padding: 60px; 
+            background: #080808; 
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.2); 
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .chapter-header { 
+            text-align: center; 
+            border-bottom: 2px solid #8b0000; 
+            margin-bottom: 50px; 
+            padding-bottom: 20px; 
+        }
+        .title { 
+            font-size: 3em; 
+            color: #fff; 
+            margin: 0; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            font-weight: 900; 
+            text-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+        }
+        .scene-header { 
+            color: #d4af37; 
+            letter-spacing: 4px; 
+            font-weight: bold; 
+            margin-top: 50px; 
+            border-bottom: 1px solid #333; 
+            text-transform: uppercase; 
+            font-size: 1.2em; 
+        }
+
+        .narration { 
+            margin-bottom: 30px; 
+            text-align: justify; 
+            font-size: 1.15em; 
+            text-indent: 20px; 
+        }
+        .dialogue-wrap { 
+            background: #0c0c0c; 
+            padding: 30px; 
+            border-left: 5px solid #8b0000; 
+            margin: 30px 0; 
+            box-shadow: inset 5px 0 15px rgba(0,0,0,0.5); 
+        }
+        .character-name {
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .sfx { 
+            color: #8b0000; 
+            font-weight: bold; 
+            text-align: center; 
+            display: block; 
+            margin: 35px; 
+            letter-spacing: 6px; 
+            font-size: 1.6em; 
+            text-transform: uppercase; 
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
+        }
+        .warning-box { 
+            background: #0a0000; 
+            border: 2px double #8b0000; 
+            padding: 40px; 
+            text-align: center; 
+            margin: 40px 0; 
+        }
+
+        .nav-box { display: flex; justify-content: flex-end; margin-top: 60px; }
+        .nav-btn { 
+            background: #8b0000; 
+            color: white; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 2px; 
+            transition: 0.4s; 
+            letter-spacing: 2px; 
+            border: 1px solid transparent;
+        }
+        .nav-btn:hover { 
+            background: #fff; 
+            color: #8b0000; 
+            box-shadow: 0 0 25px #8b0000; 
+            border: 1px solid #8b0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="manhwa-container">
+    <header class="chapter-header">
+        <h1 class="title">秘密の王座</h1>
+        <div class="scene-header">CHAPTER 24: THE BOARD'S EXECUTION</div>
+    </header>
+
+    <div class="scene-header" style="border: none; font-size: 0.9em; color: #8b0000;">
+        KIM MANSION // THE DINING HALL // THE RECKONING
+    </div>
+
+    <div class="narration">
+        Gobo slammed the leather-bound diary onto the table. "500 million won, Shefiee. For 'Disposal Services.' My father didn't just clean the blood; he kept the bill."
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Shefiee</span>
+        (Voice trembling) "A diary is just ink. It’s a story, nothing more. You have no proof that I—"
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "We have more than ink, Chairperson. We have a ghost."
+    </div>
+
+    <div class="narration">
+        Seo-Jun tapped a command into his tablet. The massive 4K monitor on the wall flickered. It wasn't the washroom this time. It was a grainy, night-vision dashcam feed from thirteen years ago. The sound of rain hissed through the speakers, followed by a sudden, metallic <strong>SNAP</strong>.
+    </div>
+
+    <span class="sfx">** STATIC — SCREAM — CRASH **</span>
+
+    <div class="warning-box">
+        <span class="character-name" style="color: #ff0000;">EVIDENCE: RECOVERED DASHCAM 001</span>
+        <p style="color: #fff; font-style: italic; margin-top: 15px;">
+            The audio is crystal clear. A woman's voice—Shefiee's sister—begging for the brakes to work. Then, a final, chilling call received on the car's Bluetooth. <em>"Goodbye, sister. The Board doesn't like loose ends,"</em> Shefiee’s voice echoes through the dining hall.
+        </p>
+    </div>
+
+    <div class="narration">
+        Shefiee collapsed into her chair, her face a mask of ashen terror. The combination of the diary's financial trail and the dashcam's audio was a death sentence. Her pride didn't just break; it evaporated.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "Sign the papers, Shefiee. Not just for your resignation... but for the full transfer of the Board's voting rights to the Kim Bloodline. But you aren't the only one who needs to sign."
+    </div>
+
+    <div class="narration">
+        President Kim leaned back, a shark-like grin on his face. "Shefiee has already summoned them. They think they're here to celebrate my downfall. They think they're here to divide the spoils."
+    </div>
+
+    <span class="sfx">** DING — DONG — DOOM **</span>
+
+    <div class="narration">
+        The heavy doorbell rang, echoing through the foyer. The rest of the Board—Min, Choi, and Park—had arrived. They walked through the front door with champagne and arrogance, unaware that the 'Orphan' they despised was waiting to lead them to the gallows.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "Let them in, Lisa. The 'Audit' is about to become a Board Meeting. And this time... everyone is going to pay their debts."
+    </div>
+
+    <div class="nav-box"> 
+        <a href="chapter25.html" class="nav-btn">CHAPTER 25: THE FINAL BOARDROOM →</a> 
+    </div>
+</div>
+
+</body>
+</html>
