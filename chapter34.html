@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* GLOBAL ENVIRONMENT - RED, GOLD, IVORY, PINK THEME */
+        body { 
+            background-color: #0d0000; 
+            background: radial-gradient(circle at center, #2b0a0a 0%, #0d0000 100%);
+            background-attachment: fixed;
+            color: #f5f5f0; /* Ivory text */
+            font-family: 'Garamond', serif; 
+            line-height: 1.8; 
+            margin: 0;
+            padding: 40px 20px; 
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .manhwa-container { 
+            position: relative;
+            max-width: 900px; 
+            width: 100%; 
+            border: 2px solid #d4af37; /* Gold Border */
+            padding: 60px; 
+            background: linear-gradient(135deg, #120000 0%, #1a0505 100%); 
+            box-shadow: 0 0 60px rgba(255, 182, 193, 0.2); /* Soft Pink Glow */
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .chapter-header { 
+            text-align: center; 
+            border-bottom: 3px double #d4af37; 
+            margin-bottom: 50px; 
+            padding-bottom: 20px; 
+        }
+        .title { 
+            font-size: 3.5em; 
+            color: #fff; 
+            text-shadow: 0 0 15px #ffb6c1; /* Pink glow on title */
+            margin: 0; 
+            letter-spacing: 8px; 
+            text-transform: uppercase; 
+            font-weight: 900; 
+        }
+        .scene-header { 
+            color: #d4af37; /* Gold */
+            letter-spacing: 4px; 
+            font-weight: bold; 
+            margin-top: 50px; 
+            border-bottom: 1px solid #4a0000; 
+            text-transform: uppercase; 
+            font-size: 1.2em; 
+        }
+
+        .narration { 
+            margin-bottom: 30px; 
+            text-align: justify; 
+            font-size: 1.2em; 
+            color: #ffebf0; /* Very light pinkish-ivory */
+            text-indent: 20px; 
+        }
+        .dialogue-wrap { 
+            background: rgba(255, 182, 193, 0.05); /* Subtle pink tint */
+            padding: 30px; 
+            border-left: 5px solid #d4af37; /* Gold bar */
+            border-right: 1px solid rgba(212, 175, 55, 0.2);
+            margin: 30px 0; 
+        }
+        .character-name {
+            color: #ffb6c1; /* Light Pink Name */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        .sfx { 
+            color: #AD03DE; /* Vivid Red SFX */
+            font-weight: bold; 
+            text-align: center; 
+            display: block; 
+            margin: 35px; 
+            letter-spacing: 10px; 
+            font-size: 1.8em; 
+            text-transform: uppercase; 
+            text-shadow: 0 0 10px rgba(255, 0, 51, 0.5);
+        }
+        .warning-box { 
+            background: #2b0000; 
+            border: 2px solid #ffb6c1; /* Pink Border */
+            padding: 40px; 
+            text-align: center; 
+            margin: 40px 0; 
+            box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .nav-box { display: flex; justify-content: flex-end; margin-top: 60px; }
+        .nav-btn { 
+            background: #d4af37; 
+            color: #000; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 0px; 
+            transition: 0.4s; 
+            letter-spacing: 2px; 
+            border: 1px solid #fff;
+        }
+        .nav-btn:hover { 
+            background: #ffb6c1; 
+            color: #000; 
+            box-shadow: 0 0 25px #ffb6c1; 
+        }
+
+        strong { color: #d4af37; } /* Gold accents in text */
+    </style>
+</head>
+<body>
+
+<div class="manhwa-container">
+    <header class="chapter-header">
+        <h1 class="title">秘密の王座</h1>
+        <div class="scene-header">CHAPTER 34: THE PROTOCOL OF THE SOVEREIGN</div>
+    </header>
+
+    <div class="narration">
+        The East Wing of the mansion smelled of expensive lilies and the cold sweat of the defeated. <strong>Mrs. Lisa</strong> stood flanked by <strong>May</strong> and <strong>Unisan</strong>, their silhouettes trembling against the velvet curtains. They were dressed in <strong>light pink silk</strong> that cost more than a commoner's life, yet they looked like prisoners waiting for a verdict.
+    </div>
+
+    <span class="sfx">** THE HEAVY OAK DOORS SLAM SHUT **</span>
+
+    <div class="narration">
+        Seo-Jun walked into the center of the room, his jacket discarded, his shirt unbuttoned halfway. Behind him, <strong>Hana</strong> leaned against the doorframe, her arms crossed, watching the scene with the detached hunger of a predator.
+    </div>
+
+    <span class="sfx">** CRACK — A SHARP SLAP RESONATES **</span>
+
+    <div class="narration">
+        The force of the blow sent Lisa stumbling back. Before May or Unisan could scream, Seo-Jun reached out, grabbing them both by the hair and pulling them close.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "There is no family here. There is no 'Mother.' There are no 'Sisters.' There is only the King and his property. Your relationship to each other is dead. You are a collection. And I intend to enjoy the full value of that collection tonight."
+    </div>
+
+    <div class="narration">
+        He pulled Lisa back toward him, forcing her to stand between her daughters. He claimed her mouth in a violent, hungry kiss, his tongue a weapon of conquest. As he broke for air, he delivered a sharp, heavy slap to the curve of her chest, then turned and did the same to May and Unisan in rapid succession.
+    </div>
+
+    <span class="sfx">** THWACK — THWACK — THWACK **</span>
+
+    <div class="dialogue-wrap" style="border-left-color: #ffb6c1;">
+        <span class="character-name">Hana</span>
+        "They look so much better when they’re broken, don't they, Master? The 'Architects' daughters... and their mother. Shall I assist in the final demonstration?"
+    </div>
+
+    <div class="warning-box">
+        <span class="character-name" style="color: #d4af37;">PROTOCOL: ABSOLUTE OWNERSHIP</span>
+        <p style="color: #f5f5f0; font-style: italic; margin-top: 15px;">
+            The titles of Mother, Daughter, and Sister have been formally abolished. In the Sovereign's house, these three are now classified as <b>Universal Assets</b>. Their only purpose is to serve the celebration of the New Dynasty.
+        </p>
+    </div>
+
+    <div class="narration">
+        Seo-Jun looked at the three of them—shattered, humiliated, and utterly his. He looked back at Hana and nodded. The marriage celebration wasn't just about them; it was about the world they now owned.
+    </div>
+
+    <div style="border: 1px solid #d4af37; padding: 40px; background: rgba(20, 0, 0, 0.6); margin-top: 20px;">
+        
+        <div class="narration">
+            The master suite was a landscape of gold and shadow. The three "assets"—Lisa, May, and Unisan—were now nothing more than a synchronized machine of pleasure, their identities erased by the rhythmic command of their new Master. On the massive bed, the hierarchy was visually absolute.
+        </div>
+
+        <span class="sfx" style="color: #ffb6c1;">** RIPPING SILK — THE SOUND OF DOMINION **</span>
+
+        <div class="narration">
+            Seo-Jun reached out, his fingers hooking into the delicate lace of Hana’s panties. With a single, violent tug, the fabric tore apart. He didn't wait; his hand moved with possessive intent, fingering her with a rough, rhythmic heat that drew a sharp, breathy gasp from the woman who usually showed no emotion.
+        </div>
+
+        <span class="sfx">** AH—! MASTER... YES... **</span>
+
+        <div class="narration">
+            The scene was a chaotic masterpiece of submission. While Lisa and her daughters were occupied—sucking, serving, and providing a simultaneous blowjob and boobjob—Hana herself took control of the center. She humped over him with a fierce, desperate energy, her body a weapon of pure friction. When she finally shattered, Seo-Jun claimed the essence of her release, drinking it in as a final seal.
+        </div>
+
+        <div class="dialogue-wrap" style="border-left-color: #d4af37;">
+            <span class="character-name">Seo-Jun</span>
+            "Look at yourselves. The daughters of the Board... and the woman who thought she could rule me. You've tasted this before, but tonight, I am your God. Drink it in. This is the only world you have left."
+        </div>
+
+        <span class="sfx">** THWACK — THWACK — AHN! — SLAP **</span>
+
+        <div class="narration">
+            He flipped Hana over, driving into her with the same relentless force he had used to crush the Board. Simultaneously, he dominated the other three, moving between them with predatory efficiency. Every thrust was a reminder of their mother's fall, and every sharp, stinging slap to their skin was a seal of his ownership. He forced them into a cycle of desperate pleasure, driving each of them to a shattering peak until their bodies gave out.
+        </div>
+
+        <div class="warning-box" style="border-color: #d4af37; background: #1a0000;">
+            <span class="character-name" style="color: #ffb6c1;">DYNASTIC CONSUMMATION: COMPLETE</span>
+            <p style="color: #f5f5f0; font-style: italic; margin-top: 15px;">
+                The titles of Mother and Daughter have been incinerated. By subjugating the step-family while simultaneously claiming the Queen, Seo-Jun has created a closed loop of power. Only the King, the Blade, and the Collection.
+            </p>
+        </div>
+
+        <div class="narration">
+            As they reached their breaking points, Seo-Jun claimed every drop of their release, a carnal audit of his new assets. He leaned back, his hand gripping May’s hair as he looked at the wreckage of the old Kim legacy sprawled across his bed. He was having the best moments of his life, fueled by the pure, unadulterated high of absolute control.
+        </div>
+
+        <span class="sfx" style="color: #ffb6c1;">** AH AH EVERYTHING IS YOURS **</span>
+
+        <div class="dialogue-wrap" style="border-left-color: #ffb6c1;">
+            <span class="character-name">Hana</span>
+            "The house is quiet now, Master. The world is waiting for your next move. Shall we take this fire to the global markets tomorrow?"
+        </div>
+
+        <div class="dialogue-wrap">
+            <span class="character-name">Seo-Jun</span>
+            "Tomorrow, we audit the world. But tonight... the celebration isn't over yet."
+        </div>
+    </div>
+    <div class="image-showcase" style="
+    margin: 60px 0; 
+    padding: 10px; 
+    border: 1px solid #d4af37; 
+    background: #000; 
+    box-shadow: 0 0 40px rgba(255, 182, 193, 0.4), 0 0 15px rgba(212, 175, 55, 0.3);
+    position: relative;
+    line-height: 0;
+">
+    <div style="
+        position: absolute; 
+        top: 0; left: 0; right: 0; bottom: 0; 
+        box-shadow: inset 0 0 30px rgba(255, 182, 193, 0.2); 
+        pointer-events: none;
+    "></div>
+
+    <img src="<a href="https://i.ibb.co/SXCKGNJR/Charming-man-surrounded-by-elegant-ladies.png" border="0"></a>" alt="The New Dynasty" style="
+        width: 100%; 
+        height: auto; 
+        filter: contrast(1.1) brightness(0.9);
+        display: block;
+    ">
+
+    <div style="
+        text-align: center; 
+        padding: 15px; 
+        background: rgba(20, 0, 0, 0.8); 
+        color: #ffb6c1; 
+        font-size: 0.9em; 
+        letter-spacing: 3px; 
+        text-transform: uppercase;
+        border-top: 1px solid #d4af37;
+    ">
+        Visual Data: The Sovereign's Collection
+    </div>
+</div>
+    <div style="margin-top: 80px; border-top: 1px solid #4a0000; padding-top: 30px;">
+        <table style="width: 100%; color: #888; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+            <tr>
+                <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
+</body>
+</html>
