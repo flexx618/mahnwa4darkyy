@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+        body { 
+            background-color: #020105; 
+            color: #ffffff; 
+            font-family: 'Spectral', serif; 
+            line-height: 1.8; 
+            padding: 40px; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            border: 1px solid #1a0f2e; 
+            padding: 50px; 
+            background: linear-gradient(180deg, #080412 0%, #000 100%);
+            box-shadow: 0 0 100px rgba(48, 25, 82, 0.2); 
+        }
+
+        h1 { 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 12px; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #8b6b1b; 
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 { 
+            color: #c5a059; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            letter-spacing: 6px; 
+            margin-top: 0; 
+            font-family: 'Cinzel', serif;
+        }
+
+        .location-tag { 
+            color: #c5a059; 
+            font-weight: bold; 
+            border: 1px solid #8b6b1b;
+            padding: 5px 15px;
+            margin-bottom: 25px; 
+            display: inline-block; 
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(139, 107, 27, 0.3); 
+            background: rgba(139, 107, 27, 0.05);
+        }
+
+        .camera-direction { 
+            color: #5c5470; 
+            font-style: italic; 
+            font-size: 0.85rem; 
+            margin: 20px 0; 
+            display: block; 
+            font-family: 'Spectral', serif;
+        }
+
+        .sfx-small { 
+            text-align: center; 
+            margin: 35px 0; 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.1rem;
+            color: #5d3fd3; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #5d3fd3;
+            animation: slowPulse 4s infinite ease-in-out; 
+            display: block;
+        }
+
+        @keyframes slowPulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 25px #5d3fd3; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        .dialogue-container { 
+            margin: 35px 0; 
+            padding: 15px 25px; 
+            border-left: 1px solid #8b6b1b; 
+            background: linear-gradient(90deg, rgba(93,63,211,0.1) 0%, transparent 100%);
+        }
+
+        .character-name { 
+            color: #c5a059; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .action-desc { margin-bottom: 25px; font-size: 1.1rem; color: #ffffff; }
+        strong { color: #ffffff; font-weight: 800; }
+
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 100px; 
+            padding-top: 40px; 
+        }
+
+        .next-link { 
+            color: #fff; 
+            background: #000; 
+            padding: 20px 60px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem; 
+            border-radius: 4px;
+            display: inline-block;
+            border: 2px solid #8b6b1b;
+            letter-spacing: 6px;
+            text-shadow: 0 0 8px #fff;
+            transition: all 0.4s ease-in-out;
+            animation: buttonGlow 2.5s infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 15px rgba(93, 63, 211, 0.4), 0 0 10px rgba(139, 107, 27, 0.2); border-color: #8b6b1b; }
+            100% { box-shadow: 0 0 35px rgba(93, 63, 211, 0.8), 0 0 25px rgba(212, 175, 55, 0.4); border-color: #c5a059; transform: translateY(-2px); }
+        }
+
+        .next-link:hover { 
+            background: #1a0f2e; 
+            color: #d4af37;
+            box-shadow: 0 0 50px rgba(93, 63, 211, 1), 0 0 30px rgba(212, 175, 55, 0.7);
+            cursor: pointer;
+            letter-spacing: 8px;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>秘密の王座 <br> <span style="font-size: 1.2rem; letter-spacing: 5px;">THE ADOPTED RULE</span></h1> 
+    <h2>CHAPTER 5: THE DOUBLE SECRET</h2>
+<br>
+    <span class="location-tag">UPSTAIRS HALLWAY // 1:00 PM</span>
+
+    <span class="camera-direction">[Camera: Mid-shot. May exits the bathroom, steam rising from her skin. She is wrapped only in a white towel.]</span>
+
+    <div class="action-desc">
+        Driven by a confusion he didn't yet understand, Seo-Jun approached May. In his mind, "masturbation" wasn't a solitary act—it was the caressing of a woman. 
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "May... I want to say something. Can you help me in masturbation?"
+        <br>
+        <span class="character-name">May:</span> (Confused but dismissive) "What? Fine, just do it fast, I'm using my phone."
+    </div>
+
+    <span class="location-tag">MAY'S BEDROOM // THE CROSSOVER</span>
+
+    <div class="action-desc">
+        As May lay on the bed scrolling through her phone, Seo-Jun undressed. The moment his naked body pressed against her, she froze. The feel of his <strong>7-inch hammer</strong> rubbing against her panty was a shock she hadn't expected.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">May:</span> "Seo-Jun! Stop! This isn't masturbation... this is sex!"
+        <br>
+        <span class="character-name">Seo-Jun:</span> "If I don't put it in, it's not sex..."
+    </div>
+
+    <div class="action-desc">
+        But it was too late. The friction had made her ready. Driven by instinct, Seo-Jun slid straight inside her. It was a first for both, and as she squeezed him tightly, he filled her completely, coming deep inside.
+    </div>
+
+    <span class="sfx-small">** COMPLETE SILENCE **</span>
+
+    <div class="action-desc">
+        The guilt hit him instantly. He felt like a "bad boy," but May—older and more aware—wiped the shame away with a soft whisper.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">May:</span> "Sex isn't bad, it's just for fun... but don't you dare tell anyone about today."
+    </div>
+
+    <div class="footer-nav">
+        <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+            <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+                <tr>
+                    <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <a href="chapter6.html" class="next-link">CHAPTER 6 →</a>
+    </div>
+</div>
+
+</body>
+</html>
