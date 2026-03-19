@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* GLOBAL ENVIRONMENT */
+        body { 
+            background-color: #050505; 
+            background: radial-gradient(circle at center, #1a0505 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #e0e0e0; 
+            font-family: 'Garamond', serif; 
+            line-height: 1.8; 
+            margin: 0;
+            padding: 40px 20px; 
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        /* CUSTOM BLOOD-RED SCROLLBAR */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #8b0000; border-radius: 10px; }
+
+        /* THE MANHWA CONTAINER */
+        .manhwa-container { 
+            position: relative;
+            max-width: 900px; 
+            width: 100%; 
+            border: 1px solid #1a1a1a; 
+            padding: 60px; 
+            background: #080808; 
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.2); 
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        /* HEADERS & TYPOGRAPHY */
+        .chapter-header { 
+            text-align: center; 
+            border-bottom: 2px solid #8b0000; 
+            margin-bottom: 50px; 
+            padding-bottom: 20px; 
+        }
+        .title { 
+            font-size: 3em; 
+            color: #fff; 
+            margin: 0; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            font-weight: 900; 
+            text-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+        }
+        .scene-header { 
+            color: #d4af37; 
+            letter-spacing: 4px; 
+            font-weight: bold; 
+            margin-top: 50px; 
+            border-bottom: 1px solid #333; 
+            text-transform: uppercase; 
+            font-size: 1.2em; 
+        }
+
+        /* CONTENT ELEMENTS */
+        .narration { 
+            margin-bottom: 30px; 
+            text-align: justify; 
+            font-size: 1.15em; 
+            text-indent: 20px; 
+        }
+        .dialogue-wrap { 
+            background: #0c0c0c; 
+            padding: 30px; 
+            border-left: 5px solid #8b0000; 
+            margin: 30px 0; 
+            box-shadow: inset 5px 0 15px rgba(0,0,0,0.5); 
+        }
+        .character-name {
+            color: #d4af37;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .sfx { 
+            color: #8b0000; 
+            font-weight: bold; 
+            text-align: center; 
+            display: block; 
+            margin: 35px; 
+            letter-spacing: 6px; 
+            font-size: 1.6em; 
+            text-transform: uppercase; 
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
+        }
+        .warning-box { 
+            background: #0a0000; 
+            border: 2px double #8b0000; 
+            padding: 40px; 
+            text-align: center; 
+            margin: 40px 0; 
+        }
+
+        /* WATERMARK */
+        .sigma-watermark {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 0.7em;
+            color: #333;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            border-right: 1px solid #8b0000;
+            padding-right: 10px;
+            opacity: 0.4;
+        }
+        .nav-box { 
+            display: flex; 
+            justify-content: flex-end; 
+            margin-top: 60px; 
+            position: relative; 
+            z-index: 4; 
+        }
+        .nav-btn { 
+            background: #8b0000; 
+            color: white; 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 2px; 
+            transition: 0.4s; 
+            letter-spacing: 2px; 
+            border: 1px solid transparent;
+            text-align: center;
+        }
+        .nav-btn:hover { 
+            background: #fff; 
+            color: #8b0000; 
+            box-shadow: 0 0 25px #8b0000; 
+            border: 1px solid #8b0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sigma-watermark">THE ADOPTED RULE</div>
+
+<div class="manhwa-container">
+    <header class="chapter-header">
+        <h1 class="title">秘密の王座</h1>
+        <div class="scene-header">CHAPTER 22: THE BLACKMAIL BRUNCH</div>
+    </header>
+
+    <div class="scene-header" style="border: none; font-size: 0.9em; color: #8b0000;">
+        KIM MANSION // THE DINING HALL // 09:15 AM
+    </div>
+
+    <div class="narration">
+        The silver clinked against the porcelain like a countdown. Shefiee sat at the head of the table, her Chanel suit a suit of armor. She didn't touch the food. She only touched the legal documents she had placed on the silk tablecloth—the death warrant for the Kim Empire.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Shefiee</span>
+        "Let’s skip the pleasantries, Kim. The Board has the votes. Your 'Heir' is a scandal waiting to burst, and your household is a mess. Sign the transfer of ownership, and I might let you keep the mansion. Resist, and I’ll bury you in the gutter where you found this boy."
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">President Kim</span>
+        "Arrogance is a blindfold, Chairperson. You talk about ownership, but you haven't even seen the 'Presentaton' Seo-Jun prepared for you. It's quite... interactive."
+    </div>
+
+    <div class="narration">
+        I stepped forward. I didn't look like a boy anymore. I was the wolf my father had built. I placed my phone in the center of the table—screen up. I tapped the file labeled <strong>'WASHROOM_AUDIT_RHEA'</strong>.
+    </div>
+
+    <span class="sfx">** BEEP - PLAY - RUIN **</span>
+
+    <div class="warning-box">
+        <span class="character-name" style="color: #ff0000;">LIVE FEED: COMPROMISED</span>
+        <p style="color: #fff; font-style: italic; margin-top: 15px;">
+            The screen flickers to life in 4K. The steam of the washroom. The sound of May’s slap, followed by Rhea’s absolute surrender. The camera captures every marking, every moan, and every drop of Rhea's purity being dismantled by the 'Adopted' Heir.
+        </p>
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Seo-Jun</span>
+        "One click, Shefiee. One upload and your 'Traditional Values' become a joke. Your daughter's reputation... gone. Your Board seat... evaporated. Does the Chairperson want to see more?"
+    </div>
+
+    <div class="narration">
+        Shefiee didn't blink. She slowly reached out, picked up a grape, and popped it into her mouth with a terrifying, cold calm.
+    </div>
+
+    <div class="dialogue-wrap">
+        <span class="character-name">Shefiee</span>
+        "You think I care about that girl? Rhea isn't my blood. She’s the brat of my dead sister. I raised her as a prop—a tool for the public. Leak it. Burn her. I’ll simply call her a victim of your depravity. You have no leverage over a woman who has no heart."
+    </div>
+
+    <span class="sfx">** THUD - HEAVY FOOTSTEPS **</span>
+
+    <div class="narration">
+        The heavy oak doors opened and <strong>GOBO</strong> enters....
+    </div>
+
+
+    <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+        <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+            <tr>
+                <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="nav-box">
+        <a href="chapter23.html" class="nav-btn">CHAPTER 23: THE BLOODLINE LEGACY →</a>
+    </div>
+</div>
+
+</body>
+</html>
