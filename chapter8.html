@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+        body { 
+            background-color: #020105; 
+            color: #ffffff; 
+            font-family: 'Spectral', serif; 
+            line-height: 1.8; 
+            padding: 40px; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            border: 1px solid #1a0f2e; 
+            padding: 50px; 
+            background: linear-gradient(180deg, #080412 0%, #000 100%);
+            box-shadow: 0 0 100px rgba(48, 25, 82, 0.2); 
+        }
+
+        h1 { 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 12px; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #8b6b1b; 
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 { 
+            color: #c5a059; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            letter-spacing: 6px; 
+            margin-top: 0; 
+            font-family: 'Cinzel', serif;
+        }
+
+        .location-tag { 
+            color: #c5a059; 
+            font-weight: bold; 
+            border: 1px solid #8b6b1b;
+            padding: 5px 15px;
+            margin-bottom: 25px; 
+            display: inline-block; 
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(139, 107, 27, 0.3); 
+            background: rgba(139, 107, 27, 0.05);
+        }
+
+        .camera-direction { 
+            color: #5c5470; 
+            font-style: italic; 
+            font-size: 0.85rem; 
+            margin: 20px 0; 
+            display: block; 
+        }
+
+        .sfx-impact, .sfx-heavy { 
+            text-align: center; 
+            margin: 35px 0; 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.8rem;
+            color: #5d3fd3; 
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-shadow: 0 0 15px #5d3fd3;
+        }
+
+        .sfx-heavy { color: #ff0055; text-shadow: 0 0 15px #ff0055; }
+
+        .dialogue-container, .dialogue-box { 
+            margin: 35px 0; 
+            padding: 15px 25px; 
+            border-left: 1px solid #8b6b1b; 
+            background: linear-gradient(90deg, rgba(93,63,211,0.1) 0%, transparent 100%);
+        }
+
+        .character-name { 
+            color: #c5a059; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .action-desc, .action-text { margin-bottom: 25px; font-size: 1.1rem; color: #ffffff; }
+        .internal-thought { color: #a395e2; font-style: italic; margin-bottom: 20px; padding: 10px; border-left: 1px solid #5d3fd3; }
+
+        .climax-divider {
+            text-align: center;
+            color: #c5a059;
+            font-size: 1.5rem;
+            margin: 40px 0;
+            letter-spacing: 15px;
+        }
+
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 60px; 
+            padding-top: 40px; 
+        }
+
+        .next-link { 
+            color: #fff; 
+            background: #000; 
+            padding: 20px 60px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem; 
+            border: 2px solid #8b6b1b;
+            letter-spacing: 6px;
+            display: inline-block;
+            transition: 0.3s;
+            animation: buttonGlow 2.5s infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 15px rgba(93, 63, 211, 0.4); border-color: #8b6b1b; }
+            100% { box-shadow: 0 0 35px rgba(93, 63, 211, 0.8); border-color: #c5a059; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>秘密の王座 <br> <span style="font-size: 1.2rem; letter-spacing: 5px;">THE ADOPTED RULE</span></h1> 
+    <h2>CHAPTER 8: THE CAVE’S COMPASSION</h2>
+<br>
+    <span class="location-tag">MOUNTAIN CAVE // THE RAINSTORM</span>
+
+    <div class="action-desc">
+        The bonfire flickered, casting long shadows against the jagged walls. I looked at Unisan, who was shivering uncontrollably.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "I think... you should sleep in the bag since you are so wet. I will manage outside."
+    </div>
+
+    <div class="action-desc">
+        She accepted, heading toward the bag, but I stopped her. 
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "Wait. Your wet clothes will make the bag wet. You should remove all your clothes and slip in... I’ll look the other way. Don't be uncomfortable."
+    </div>
+
+    <div class="internal-thought">
+        Inside the bag, Unisan’s mind raced. She remembered how, ever since Seo was young, she had never treated him like family. But hearing him sneeze outside, she realized he was sacrificing his health for her. Her stone heart finally broke.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Unisan:</span> "Seo... get in. You'll fall ill if you stay out there."
+    </div>
+
+    <span class="camera-direction">[Camera: Seo undresses in the shadows and slips into the tight bag. Their bodies press together instantly.]</span>
+
+    <div class="action-desc">
+        The bag was a bit tight, but as my chest pressed against her back, it felt relaxing. However, the proximity was too much. Down there, I was getting an erection. My 7-inch hammer poked against her.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Unisan:</span> (Gasping) "What... what are you doing?"
+        <br>
+        <span class="character-name">Seo-Jun:</span> "Hold on, Noona... I'm just adjusting ourselves."
+    </div>
+
+    <span class="sfx-impact">** RIPP — TEAR **</span>
+
+    <div class="action-text">
+        The sleeping bag was a claustrophobic trap of heat and silk. As I pressed against Unisan’s back, the friction became unbearable. My hands found their way around her waist, sliding upward to <strong>press her breasts from behind</strong>. I could feel her breath hitch, her body becoming slick and ready.
+    </div>
+
+    <div class="dialogue-box">
+        <span class="character-name">Unisan:</span> (Moaning) "Seo... what are you... wait—!"
+    </div>
+
+    <div class="action-text">
+        I didn't wait. I couldn't. I guided myself into her <strong>wet, dripping heated pussy</strong>. The sudden intrusion made her back arch, her fingers digging into the cave floor. 
+    </div>
+
+    <span class="sfx-heavy">** RIIIIIP **</span>
+
+    <div class="action-text">
+        Under the force of the movement, the sleeping bag <strong>tore wide open</strong>, but we didn't care. I started fucking her with a rhythm that matched the thunder outside. Her moans were loud, echoing off the stone walls, drowning out the rain.
+    </div>
+
+    <div class="climax-divider">✦ ✦ ✦ ✦ ✦</div>
+
+    <div class="action-text">
+        Eventually, the storm broke. The sky cleared just as we reached our limit. We looked out of the cave entrance to see the <strong>meteor shower</strong> streaking across the dark sky.
+    </div>
+
+    <div class="action-text">
+        As the stars fell, I showered my own "meteors" across her face. She sat there in the moonlight, her <strong>face painted white</strong> by my cumm - the evidence of our secret. We stayed like that for a long time, watching the sky in silence.
+    </div>
+
+    <span class="location-tag">THE NEXT DAY // THE DESCENT</span>
+
+    <div class="action-text">
+        Morning came with a heavy, golden light. We packed our bags—the telescope, the torn sleeping bag, and our new reality. As we headed back home, the silence between us wasn't cold anymore. It was thick with the memory of the night.
+    </div>
+
+    <div class="footer-nav">
+        <a href="chapter9.html" class="next-link">CHAPTER 9 →</a>
+    </div>
+</div>
+
+</body>
+</html>
