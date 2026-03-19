@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+        body { 
+            background-color: #020105; 
+            color: #ffffff; 
+            font-family: 'Spectral', serif; 
+            line-height: 1.8; 
+            padding: 40px; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            border: 1px solid #1a0f2e; 
+            padding: 50px; 
+            background: linear-gradient(180deg, #080412 0%, #000 100%);
+            box-shadow: 0 0 100px rgba(48, 25, 82, 0.2); 
+        }
+
+        h1 { 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 12px; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #8b6b1b; 
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 { 
+            color: #c5a059; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            letter-spacing: 6px; 
+            margin-top: 0; 
+            font-family: 'Cinzel', serif;
+        }
+
+        .chapter-number { 
+            color: #5d3fd3; 
+            text-align: center; 
+            font-weight: bold; 
+            margin: 60px 0; 
+            font-size: 1.6rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px;
+            font-family: 'Cinzel', serif;
+            text-shadow: 0 0 15px rgba(93, 63, 211, 0.4);
+        }
+
+        .location-tag { 
+            color: #c5a059; 
+            font-weight: bold; 
+            border: 1px solid #8b6b1b;
+            padding: 5px 15px;
+            margin-bottom: 25px; 
+            display: inline-block; 
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(139, 107, 27, 0.3); 
+            background: rgba(139, 107, 27, 0.05);
+        }
+
+        .camera-direction { 
+            color: #5c5470; 
+            font-style: italic; 
+            font-size: 0.85rem; 
+            margin: 20px 0; 
+            display: block; 
+            font-family: 'Spectral', serif;
+        }
+
+        .sfx-small { 
+            text-align: center; 
+            margin: 35px 0; 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.1rem;
+            color: #5d3fd3; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #5d3fd3;
+            animation: slowPulse 4s infinite ease-in-out; 
+            display: block;
+        }
+
+        @keyframes slowPulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 25px #5d3fd3; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        .dialogue-container { 
+            margin: 35px 0; 
+            padding: 15px 25px; 
+            border-left: 1px solid #8b6b1b; 
+            background: linear-gradient(90deg, rgba(93,63,211,0.1) 0%, transparent 100%);
+        }
+
+        .character-name { 
+            color: #c5a059; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .action-desc { margin-bottom: 25px; font-size: 1.1rem; color: #ffffff; }
+        strong { color: #ffffff; font-weight: 800; }
+
+        .origin-block {
+            background: rgba(48, 25, 82, 0.3);
+            border: 1px solid #5d3fd3;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: inset 0 0 20px rgba(93, 63, 211, 0.2);
+        }
+
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 100px; 
+            padding-top: 40px; 
+        }
+
+        .next-link { 
+            color: #fff; 
+            background: #000; 
+            padding: 18px 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem; 
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(93, 63, 211, 0.6), 0 0 30px rgba(139, 107, 27, 0.2);
+            transition: 0.8s ease; 
+            display: inline-block;
+            border: 1px solid #8b6b1b;
+            letter-spacing: 3px;
+            animation: buttonGlow 3s infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            from { box-shadow: 0 0 15px rgba(93, 63, 211, 0.4); border-color: #8b6b1b; }
+            to { box-shadow: 0 0 30px rgba(93, 63, 211, 0.8), 0 0 10px #c5a059; border-color: #c5a059; }
+        }
+
+        .next-link:hover { 
+            background: #150b24; 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>秘密の王座 <br> <span style="font-size: 1.2rem; letter-spacing: 5px;">THE ADOPTED RULE</span></h1> <h2>CHAPTER 1</h2>
+<br>
+    <span class="location-tag">KIM MANSION // SEO-JUN’S QUARTERS</span>
+
+    <span class="camera-direction">[Camera: Extreme close-up. Seo-Jun’s eyelids flutter open. His dark irises reflect the deep violet shadows of the morning.]</span>
+
+    <div class="action-desc">
+        The morning air was thick with the scent of lavender and floor wax. Seo-Jun lay still, but his body was far from at rest. Beneath the heavy silk duvet, his <strong>steam engine</strong> was already at full throttle—a vertical, unyielding pillar of heat that made the fabric tent violently. It was the "Iron Rod" of an Alpha, pulsing with the silent aggression of a morning wood.
+    </div>
+
+    <span class="camera-direction">[Camera: Sharp cut. Lisa, the stepmother, is bent over at the foot of the bed. She is mopping the floor.]</span>
+
+    <div class="action-desc">
+        She wore only a thin, silk gown. No lace, no straps—just a sheer violet veil that clung to her <strong>heavy-set chest and wide, motherly hips</strong>. As she leaned forward to reach beneath the bed, the hem rode up. 
+        <br><br>
+        Because she wore <strong>nothing underneath</strong>, the golden sunrise mapped the perfect, full shape of her pussy right before his eyes. The sight was a biological assault. 
+    </div>
+
+    <span class="sfx-small">** THUMP - THUMP - THUMP **</span>
+
+    <div class="action-desc">
+        Seo-Jun didn't make a sound. He bolted for the bathroom. A quick shower, a fresh brush and ready to go downstairs.
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #1a0f2e; margin: 40px 0;">
+
+    <span class="location-tag">DINING HALL // THE PRESIDENT'S TABLE</span>
+
+    <span class="camera-direction">[Camera: Wide shot. President Kim-un sits at the head of a gilded oak table. To his right, May. Seo-Jun enters.]</span>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "Good morning, Father. Good morning, May."
+    </div>
+
+    <div class="action-desc">
+       The atmosphere was standard for the Kim household—quiet and formal. Before he could pick up his utensils, Lisa spoke up.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Lisa:</span> "Seo-Jun, dear... could you go up and check on Unisa? She hasn't come down for breakfast again. Maybe she'll listen to you."
+    </div>
+
+    <span class="camera-direction">[Camera: Low angle tracking Seo-Jun’s feet as he climbs the grand staircase toward the forbidden door.]</span>
+
+    <div class="action-desc">
+        He stood before Unisa’s door. The "Isolated Queen." He knocked, his voice steady despite the heat still simmering in his core.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Unisa:</span> (From behind the wood, voice like ice) "Seo-Jun... I told you, don't come in here. I don't want breakfast. Leave."
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #1a0f2e; margin: 40px 0;">
+
+    <div class="origin-block">
+        <h3 style="color: #c5a059; font-family: 'Cinzel', serif; letter-spacing: 3px;">HOW I LANDED IN THIS FAMILY</h3>
+        <p style="font-style: italic; color: #e0d0ff;">
+            Thirteen years ago, the world ended in a screech of metal. Seo-Jun was the <strong>sole survivor</strong> of the accident that claimed his parents. President Kim-un, his father's business partner, found the boy in the ruins. Seeing the "innocent" face of his friend's child, he adopted him into the Kim dynasty.
+        <br><br>
+        He grew up alongside May and Unisa, with only a year or two between them. He wasn't their blood, but he was their brother—the survivor who grew up in the shadows of the President’s wings.
+        </p>
+    </div>
+
+    <span class="camera-direction">[Camera: Cut back to the present. Seo-Jun walking away from Unisa's door, his face unreadable as he descends back to the family table.]</span>
+
+    <div class="footer-nav">
+        <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+            <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+                <tr>
+                    <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <a href="#" class="next-link">CHAPTER 2 →</a>
+    </div>
+</div>
+
+</body>
+</html>
