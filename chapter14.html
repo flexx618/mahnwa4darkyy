@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Spectral:ital,wght@0,300;1,300&display=swap');
+
+        body { 
+            background-color: #020105; 
+            color: #ffffff; 
+            font-family: 'Spectral', serif; 
+            line-height: 1.8; 
+            padding: 40px; 
+            overflow-x: hidden;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            border: 1px solid #1a0f2e; 
+            padding: 50px; 
+            background: linear-gradient(180deg, #080412 0%, #000 100%);
+            box-shadow: 0 0 100px rgba(48, 25, 82, 0.2); 
+        }
+
+        h1 { 
+            color: #fff; 
+            text-align: center; 
+            font-family: 'Noto Serif JP', serif;
+            letter-spacing: 12px; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #8b6b1b; 
+            padding-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 { 
+            color: #c5a059; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            letter-spacing: 6px; 
+            margin-top: 0; 
+            font-family: 'Cinzel', serif;
+        }
+
+        .chapter-number { 
+            color: #5d3fd3; 
+            text-align: center; 
+            font-weight: bold; 
+            margin: 60px 0; 
+            font-size: 1.6rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px;
+            font-family: 'Cinzel', serif;
+            text-shadow: 0 0 15px rgba(93, 63, 211, 0.4);
+        }
+
+        .location-tag { 
+            color: #c5a059; 
+            font-weight: bold; 
+            border: 1px solid #8b6b1b;
+            padding: 5px 15px;
+            margin-bottom: 25px; 
+            display: inline-block; 
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(139, 107, 27, 0.3); 
+            background: rgba(139, 107, 27, 0.05);
+        }
+
+        .camera-direction { 
+            color: #5c5470; 
+            font-style: italic; 
+            font-size: 0.85rem; 
+            margin: 20px 0; 
+            display: block; 
+            font-family: 'Spectral', serif;
+        }
+
+        .sfx-small { 
+            text-align: center; 
+            margin: 35px 0; 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.1rem;
+            color: #5d3fd3; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #5d3fd3;
+            animation: slowPulse 4s infinite ease-in-out; 
+            display: block;
+        }
+
+        @keyframes slowPulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 25px #5d3fd3; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        .dialogue-container { 
+            margin: 35px 0; 
+            padding: 15px 25px; 
+            border-left: 1px solid #8b6b1b; 
+            background: linear-gradient(90deg, rgba(93,63,211,0.1) 0%, transparent 100%);
+        }
+
+        .character-name { 
+            color: #c5a059; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .action-desc { margin-bottom: 25px; font-size: 1.1rem; color: #ffffff; }
+        strong { color: #ffffff; font-weight: 800; }
+
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 100px; 
+            padding-top: 40px; 
+        }
+
+        .next-link { 
+            color: #fff; 
+            background: #000; 
+            padding: 18px 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem; 
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(93, 63, 211, 0.6), 0 0 30px rgba(139, 107, 27, 0.2);
+            transition: 0.8s ease; 
+            display: inline-block;
+            border: 1px solid #8b6b1b;
+            letter-spacing: 3px;
+            animation: buttonGlow 3s infinite alternate;
+        }
+
+        @keyframes buttonGlow {
+            from { box-shadow: 0 0 15px rgba(93, 63, 211, 0.4); border-color: #8b6b1b; }
+            to { box-shadow: 0 0 30px rgba(93, 63, 211, 0.8), 0 0 10px #c5a059; border-color: #c5a059; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>秘密の王座 <br> <span style="font-size: 1.2rem; letter-spacing: 5px;">THE ADOPTED RULE</span></h1> <h2>CHAPTER 14</h2>
+<br>
+    <span class="location-tag">KIM MANSION // THE EMPTY KITCHEN</span>
+
+    <span class="camera-direction">[Camera: Wide shot. The heavy front door slams shut as President Kim leaves. The house is a vacuum of silence.]</span>
+
+    <div class="action-desc">
+        The morning air was still thick with the President's departure accompanied by Unisan and May. Lisa stood at the counter, her back to the hallway. She knew. As the main door locked, she felt the predator's gaze on her spine. 
+        <br><br>
+        She watched her back as <strong>Seo-Jun</strong> stepped out of the shadows. He didn't hide it. He was already standing there with his <strong>erected dick</strong>, a thick pillar of dominance pulsing against the air.
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">Seo-Jun:</span> "Lisa I want you to help me with 'masturbation,' Will you assist me."
+    </div>
+
+    <span class="camera-direction">[Camera: Fast zoom. Seo-Jun pounces before she can reach the door.]</span>
+
+    <div class="action-desc">
+        He didn't give her a single second to lock the door. He pounced. His mouth was a storm—kissing her pussy, her boobs, her lips—smothering her protests until they turned into raw, echoing moans that bounced off the high kitchen ceilings.
+    </div>
+
+    <span class="sfx-small">** SLAP - MOAN - SLAP **</span>
+
+    <div class="action-desc">
+        The house was a stage for her "punishment." He drove into her with a rhythmic aggression—<strong>Doggy Style, 69, Anal</strong>—pushing her until she was nothing but a trembling mess of sweat and submission. 
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #1a0f2e; margin: 40px 0;">
+
+    <span class="location-tag">MASTER BATHROOM // THE STEAM</span>
+
+    <span class="camera-direction">[Camera: Overhead shot of the bathtub. The water is clouded with steam.]</span>
+
+    <div class="action-desc">
+        After the storm, there was the wash. Lisa sat in the tub, her whole body coated in sweat, but Seo-Jun hadn't left her side. They were entangled in the warm water, the tension still simmering.
+    </div>
+
+    <span class="sfx-small">** DING - DONG **</span>
+
+    <div class="action-desc">
+        The doorbell shattered the silence. 
+    </div>
+
+    <div class="dialogue-container">
+        <span class="character-name">May:</span> (Muffled, from the front door) "It’s me! Rhea, Gobo, and May!"
+    </div>
+
+    <div class="origin-block" style="border: 1px solid #ff0000; background: rgba(255, 0, 0, 0.05); box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);">
+    <span class="character-name" style="color: #ff0000; text-align: center;">!! SYSTEM ALERT: INTRUSION !!</span>
+    <p style="font-style: italic; color: #ffffff; text-align: center; margin: 0;">
+        Rhea, the friend May went to meet, had come back with them. And they had met <strong>Gobo</strong> on their way back. They were already planning to party since the President was away... 
+        <br><br>
+        <span style="color: #5d3fd3; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+            But Seo-Jun and Lisa are still locked in the bathtub, dripping wet and naked.
+        </span>
+    </p>
+</div>
+
+    <div class="footer-nav">
+        <div style="margin-top: 80px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+            <table style="width: 100%; color: #555; font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase;">
+                <tr>
+                    <td style="text-align: left;">AUTHOR: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: center;">SCRIPT: <span style="color: #d4af37;">FLEXX</span></td>
+                    <td style="text-align: right;">TRANSLATOR: <span style="color: #d4af37;">FLEXX</span></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <a href="chapter15.html" class="next-link">CHAPTER 15 →</a>
+    </div>
+</div>
+
+</body>
+</html>
